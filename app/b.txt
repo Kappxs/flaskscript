@@ -1,0 +1,35 @@
+{ {from flask_script import Manager
+from flask_migrate import migrate, MigrateCommand
+
+migrate= Migrate(app,db)
+manager= Manager(app) }} - Não existe Mais
+
+#tava dando problema
+from app.models import tables
+pass
+from app.controllers import default
+pass
+
+#app.cli.command
+@app.cli.command("db")
+def migrate_command():
+    # Seu código de migração aqui
+    pass
+
+
+
+from flask_login import LoginManager
+lm = LoginManager(app)
+
+
+
+@app.route("/adocao")
+def index():
+    return render_template("index.html")
+pass
+
+
+@app.route("/cadastro")
+def index():
+    return 
+pass
